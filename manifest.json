@@ -1,0 +1,23 @@
+{
+  "name" : "Div Flutuante",
+  "version" : "0.1",
+  "description" : "Apenas um tutorial...",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://compilando.org/*",
+        "http://www.compilando.org/*"
+      ],
+      "js" : ["jquery-1.8.2.min.js", "magic.js"],
+      "run_at" : "document_end"
+    }
+  ],
+  "page_action" : {
+    "default_icon" : "icon.png"
+  },
+  "icons" : {
+    "48" : "icon.png",
+    "128" : "icon.png"
+  },
+  "manifest_version": 2
+}
